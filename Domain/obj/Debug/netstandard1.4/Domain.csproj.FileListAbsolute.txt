@@ -1,0 +1,8 @@
+C:\My Projects\Web Api\WebApi2\Domain\bin\Debug\netstandard1.4\Domain.deps.json
+C:\My Projects\Web Api\WebApi2\Domain\bin\Debug\netstandard1.4\Domain.dll
+C:\My Projects\Web Api\WebApi2\Domain\bin\Debug\netstandard1.4\Domain.pdb
+C:\My Projects\Web Api\WebApi2\Domain\obj\Debug\netstandard1.4\Domain.csproj.CoreCompileInputs.cache
+C:\My Projects\Web Api\WebApi2\Domain\obj\Debug\netstandard1.4\Domain.AssemblyInfo.cs
+C:\My Projects\Web Api\WebApi2\Domain\obj\Debug\netstandard1.4\Domain.dll
+C:\My Projects\Web Api\WebApi2\Domain\obj\Debug\netstandard1.4\Domain.pdb
+C:\My Projects\Web Api\WebApi2\Domain\obj\Debug\netstandard1.4\Domain.csprojResolveAssemblyReference.cache

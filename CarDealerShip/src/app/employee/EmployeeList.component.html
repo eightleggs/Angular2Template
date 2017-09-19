@@ -1,0 +1,36 @@
+﻿
+    <table>
+     
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Name</td>
+                    <td>Title</td>
+                    <td>Action</td>
+
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of employees; trackBy:trackByEmpName; let i=index; 
+                            let isFirst=first; let isLast=last;
+                            let isEven = even; let isOdd = odd">
+                    
+                    <td>{{i + 1}}</td>
+                    <td>{{emp.name | uppercase}}</td>
+                    <td>{{emp.title}}</td>
+                    <td><button (click)="loadEmployeeDetail()">Load</button></td>
+                                      
+                </tr>
+
+                <tr *ngIf="!employees || employees.length == 0">
+                    <td colspan="3">No employees found</td>
+                </tr>
+
+            </tbody>
+     
+     
+    </table>
+<br />
+<button (click)="getEmployees()">Refresh</button>
+
