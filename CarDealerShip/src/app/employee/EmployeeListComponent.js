@@ -12,20 +12,39 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var EmployeeListComponent = (function () {
     function EmployeeListComponent() {
-        this.employees = [{ name: 'Andy', title: 'Sales Man' }, { name: 'Robert', title: 'Internet sales man' }];
-    }
-    EmployeeListComponent.prototype.getEmployees = function () {
+        this.selectedRadioButtonValue = 'All';
         this.employees = [
-            { name: 'Andy', title: 'Sales Man' },
-            { name: 'Robert', title: 'Internet sales man' },
-            { name: 'Rizwan', title: 'Internet sales man' }
+            { name: 'Andy', title: 'Sales', id: 1 },
+            { name: 'Robert', title: 'Internet Sales', id: 2 },
+            { name: 'Rizwan', title: 'Internet Sales', id: 3 },
+            { name: 'Keith', title: 'Manager', id: 4 }
         ];
+        this.carsSold = 0;
+    }
+    // these methods get bind to the employee-count tag/directive
+    EmployeeListComponent.prototype.getTotalEmployeesCount = function () {
+        return this.employees.length;
     };
-    EmployeeListComponent.prototype.loadEmployeeDetail = function () {
-        console.log('load employee');
+    EmployeeListComponent.prototype.getTotalSalesEmployeesCount = function () {
+        return this.employees.filter(function (e) { return e.title === 'Sales Man'; }).length;
+    };
+    EmployeeListComponent.prototype.getTotalInternetSalesEmployeesCount = function () {
+        return this.employees.filter(function (e) { return e.title === 'Internet sales man'; }).length;
+        // = assign 
+        //== compare 2values.. 
+        //=== compare value and type
+    };
+    EmployeeListComponent.prototype.loadEmployeeDetail = function (employee) {
+        this.employee = employee;
+        this.carsSold = employee.id;
     };
     EmployeeListComponent.prototype.trackByEmpName = function (index, employee) {
         return employee.name;
+    };
+    //handle the radio button changed event
+    EmployeeListComponent.prototype.onEmployeeCountRadioButtonChanged = function (selectedRadtioButtonValue) {
+        console.log('change to ' + selectedRadtioButtonValue);
+        this.selectedRadioButtonValue = selectedRadtioButtonValue;
     };
     return EmployeeListComponent;
 }());

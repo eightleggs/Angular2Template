@@ -229,7 +229,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="src\app.component.html" />
-    <Content Include="src\app\employee\Employee.component.html" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />
@@ -253,6 +252,7 @@
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
     <Content Include="src\app\employee\EmployeeList.component.html" />
+    <Content Include="src\app\employee\employeeCount.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,7 +285,7 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
-    <TypeScriptCompile Include="src\app\employee\Employeecomponent.ts" />
+    <TypeScriptCompile Include="src\app\employee\employeeCount.component.ts" />
     <TypeScriptCompile Include="src\app\employee\EmployeeListComponent.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
