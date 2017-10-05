@@ -1,0 +1,19 @@
+﻿<span>Show: </span>
+
+<input type="radio" name="options" value="All" 
+       [(ngModel)]="selectedRadoButtonValue"
+       (change)="onRadioButtonSelectionChange()"/><span>{{"All(" + all + ")" }}</span>
+
+<!--[(ngModel.selectedRadoButtonValue)] is 2 way binding. if selected, the value all is set to the model's property. -->
+<!--(change) calls the method to raise event with value as payload -->
+
+<input type="radio" name="options" value="Sales" 
+       [(ngModel)]="selectedRadoButtonValue"
+        (change)="onRadioButtonSelectionChange()"/> <span>{{"Sales(" + sales + ")" }}</span>
+
+
+<input type="radio" name="options" value="Internet Sales" 
+       [(ngModel)]="selectedRadoButtonValue"
+        (change)="onRadioButtonSelectionChange()"/> <span>{{"Internet Sales(" + internetSales + ")" }}</span>
+
+<!--when clicked, change the grid by raising event to parent component-->
